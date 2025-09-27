@@ -377,7 +377,7 @@ export default function SinhVienPage() {
           <p className="text-lg text-muted-foreground mb-8">Khám phá thêm tài liệu và nguồn tham khảo</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link href="/tai-lieu">Tài liệu & Trích dẫn</Link>
+              <Link href="/bai-hoc">Bài học Video</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
               <Link href="/phan-tich">Quay lại Phân tích</Link>
