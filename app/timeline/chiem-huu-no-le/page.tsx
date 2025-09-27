@@ -136,22 +136,36 @@ export default function ChiemHuuNoLePage() {
 
       {/* Đặc điểm chính */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8 border border-amber-200">
-            <h2 className="text-3xl font-bold text-amber-900 mb-6">Đặc điểm chính:</h2>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-amber-800">Công cụ đồng thau</p>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Phần trái - Đặc điểm chính */}
+            <div className="bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl p-8 border border-amber-200">
+              <h2 className="text-3xl font-bold text-amber-900 mb-6 text-left">Đặc điểm chính:</h2>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-amber-800 text-left">Công cụ đồng thau</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-amber-800 text-left">Nông nghiệp tưới tiêu</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-amber-800 text-left">Phân hóa giai cấp rõ rệt</p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-amber-800">Nông nghiệp tưới tiêu</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-amber-800">Phân hóa giai cấp rõ rệt</p>
-              </div>
+            </div>
+            
+            {/* Phần phải - Mô tả thêm */}
+            <div className="flex flex-col justify-center">
+              <h3 className="text-2xl font-bold text-amber-900 mb-4">Xã hội nông nghiệp với chế độ nô lệ</h3>
+              <p className="text-lg text-amber-700 leading-relaxed mb-4">
+                Giai đoạn chiếm hữu nô lệ đánh dấu sự phát triển của nông nghiệp tưới tiêu và công cụ đồng thau.
+              </p>
+              <p className="text-lg text-amber-700 leading-relaxed">
+                Xuất hiện sự phân hóa giai cấp rõ rệt giữa chủ nô và nô lệ, tạo nền tảng cho xã hội có tầng lớp.
+              </p>
             </div>
           </div>
         </div>

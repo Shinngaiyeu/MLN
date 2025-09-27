@@ -119,45 +119,47 @@ export default function TimelinePage() {
                     {/* Content */}
                     <div className={`${index % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}>
                       <Card
-                        className={`${period.bgColor} ${period.borderColor} border-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]`}
+                        className={`${period.bgColor} ${period.borderColor} border-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] text-left`}
                       >
-                        <CardHeader className="pb-4">
-                          <div className="flex items-center justify-between mb-3">
+                        <CardHeader className="pb-4 text-left">
+                          <div className="flex items-center justify-start mb-3">
                             <span
                               className={`text-sm font-semibold ${period.accentColor} bg-background/90 px-4 py-2 rounded-full shadow-sm`}
                             >
                               {period.period}
                             </span>
                           </div>
-                          <CardTitle className="text-2xl md:text-3xl font-bold text-card-foreground mb-2">
+                          <CardTitle className="text-2xl md:text-3xl font-bold text-card-foreground mb-2 text-left">
                             {period.title}
                           </CardTitle>
-                          <CardDescription className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                          <CardDescription className="text-base md:text-lg text-muted-foreground leading-relaxed text-left">
                             {period.description}
                           </CardDescription>
                         </CardHeader>
-                        <CardContent>
-                          <div className="space-y-6">
-                            <div>
-                              <h4 className="font-semibold text-card-foreground mb-3 text-lg">Đặc điểm chính:</h4>
-                              <ul className="space-y-2">
+                        <CardContent className="text-left">
+                          <div className="space-y-6 text-left">
+                            <div className="text-left">
+                              <h4 className="font-semibold text-card-foreground mb-3 text-lg text-left">Đặc điểm chính:</h4>
+                              <ul className="space-y-2 text-left">
                                 {period.keyFeatures.map((feature, idx) => (
-                                  <li key={idx} className="flex items-center text-muted-foreground">
+                                  <li key={idx} className="flex items-start text-muted-foreground text-left">
                                     <div
-                                      className={`w-3 h-3 bg-gradient-to-r from-primary to-primary/60 rounded-full mr-4 flex-shrink-0`}
+                                      className={`w-3 h-3 bg-gradient-to-r from-primary to-primary/60 rounded-full mr-4 flex-shrink-0 mt-1`}
                                     />
-                                    <span className="text-sm md:text-base">{feature}</span>
+                                    <span className="text-sm md:text-base text-left">{feature}</span>
                                   </li>
                                 ))}
                               </ul>
                             </div>
-                            <Button
-                              asChild
-                              className="w-full shadow-md hover:shadow-lg transition-all duration-300"
-                              size="lg"
-                            >
-                              <Link href={`/timeline/${period.id}`}>Xem chi tiết giai đoạn</Link>
-                            </Button>
+                            <div className="text-left">
+                              <Button
+                                asChild
+                                className="w-full shadow-md hover:shadow-lg transition-all duration-300"
+                                size="lg"
+                              >
+                                <Link href={`/timeline/${period.id}`}>Xem chi tiết giai đoạn</Link>
+                              </Button>
+                            </div>
                           </div>
                         </CardContent>
                       </Card>

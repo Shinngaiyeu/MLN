@@ -138,22 +138,36 @@ export default function HienDaiPage() {
 
       {/* Đặc điểm chính */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-200">
-            <h2 className="text-3xl font-bold text-green-900 mb-6">Đặc điểm chính:</h2>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-green-800">Cách mạng công nghệ số</p>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Phần trái - Đặc điểm chính */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-200">
+              <h2 className="text-3xl font-bold text-green-900 mb-6 text-left">Đặc điểm chính:</h2>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-green-800 text-left">Cách mạng công nghệ số</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-green-800 text-left">Kinh tế tri thức</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-green-800 text-left">Toàn cầu hóa và AI</p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-green-800">Kinh tế tri thức</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-green-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-green-800">Toàn cầu hóa và AI</p>
-              </div>
+            </div>
+            
+            {/* Phần phải - Mô tả thêm */}
+            <div className="flex flex-col justify-center">
+              <h3 className="text-2xl font-bold text-green-900 mb-4">Thời đại cách mạng công nghệ số</h3>
+              <p className="text-lg text-green-700 leading-relaxed mb-4">
+                Giai đoạn hiện đại được đặc trưng bởi cuộc cách mạng công nghệ thông tin và nền kinh tế tri thức.
+              </p>
+              <p className="text-lg text-green-700 leading-relaxed">
+                Nghề danh giá là lập trình viên và chuyên gia dữ liệu, phản ánh tầm quan trọng của công nghệ số và AI.
+              </p>
             </div>
           </div>
         </div>

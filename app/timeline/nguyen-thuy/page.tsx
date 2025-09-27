@@ -139,22 +139,36 @@ export default function NguyenThuyPage() {
 
       {/* Đặc điểm chính */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-stone-50 to-slate-50 rounded-2xl p-8 border border-stone-200">
-            <h2 className="text-3xl font-bold text-stone-900 mb-6">Đặc điểm chính:</h2>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-stone-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-stone-800">Công cụ đá thô sơ</p>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Phần trái - Đặc điểm chính */}
+            <div className="bg-gradient-to-br from-stone-50 to-slate-50 rounded-2xl p-8 border border-stone-200">
+              <h2 className="text-3xl font-bold text-stone-900 mb-6 text-left">Đặc điểm chính:</h2>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-stone-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-stone-800 text-left">Công cụ đá thô sơ</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-stone-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-stone-800 text-left">Săn bắt hái lượm</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-stone-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-stone-800 text-left">Tổ chức bộ tộc</p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-stone-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-stone-800">Săn bắt hái lượm</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-stone-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-stone-800">Tổ chức bộ tộc</p>
-              </div>
+            </div>
+            
+            {/* Phần phải - Mô tả thêm */}
+            <div className="flex flex-col justify-center">
+              <h3 className="text-2xl font-bold text-stone-900 mb-4">Xã hội săn bắt hái lượm nguyên thủy</h3>
+              <p className="text-lg text-stone-700 leading-relaxed mb-4">
+                Giai đoạn nguyên thủy được đặc trưng bởi công cụ đá thô sơ và tổ chức xã hội bộ tộc đơn giản.
+              </p>
+              <p className="text-lg text-stone-700 leading-relaxed">
+                Phân công lao động theo giới tính và tuổi tác, chưa có sự phân hóa nghề nghiệp rõ rệt.
+              </p>
             </div>
           </div>
         </div>

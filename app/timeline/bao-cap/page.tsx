@@ -135,22 +135,36 @@ export default function BaoCapPage() {
 
       {/* Đặc điểm chính */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 border border-red-200">
-            <h2 className="text-3xl font-bold text-red-900 mb-6">Đặc điểm chính:</h2>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-red-800">Kinh tế kế hoạch hóa</p>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Phần trái - Đặc điểm chính */}
+            <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 border border-red-200">
+              <h2 className="text-3xl font-bold text-red-900 mb-6 text-left">Đặc điểm chính:</h2>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-red-800 text-left">Kinh tế kế hoạch hóa</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-red-800 text-left">Công nghiệp hóa tập trung</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-red-800 text-left">Hệ thống bao cấp xã hội</p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-red-800">Công nghiệp hóa tập trung</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-red-800">Hệ thống bao cấp xã hội</p>
-              </div>
+            </div>
+            
+            {/* Phần phải - Mô tả thêm */}
+            <div className="flex flex-col justify-center">
+              <h3 className="text-2xl font-bold text-red-900 mb-4">Nền kinh tế kế hoạch hóa tập trung</h3>
+              <p className="text-lg text-red-700 leading-relaxed mb-4">
+                Giai đoạn bao cấp tập trung xây dựng nền công nghiệp cơ bản và hệ thống giáo dục quốc dân.
+              </p>
+              <p className="text-lg text-red-700 leading-relaxed">
+                Nghề danh giá là cán bộ nhà nước và kỹ sư, phản ánh tầm quan trọng của bộ máy quản lý và khoa học kỹ thuật.
+              </p>
             </div>
           </div>
         </div>
