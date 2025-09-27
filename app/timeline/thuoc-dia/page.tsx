@@ -139,22 +139,36 @@ export default function ThuocDiaPage() {
 
       {/* Đặc điểm chính */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200">
-            <h2 className="text-3xl font-bold text-blue-900 mb-6">Đặc điểm chính:</h2>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-blue-800">Kinh tế hàng hóa</p>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Phần trái - Đặc điểm chính */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200">
+              <h2 className="text-3xl font-bold text-blue-900 mb-6 text-left">Đặc điểm chính:</h2>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-blue-800 text-left">Kinh tế hàng hóa</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-blue-800 text-left">Giao thương quốc tế</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-blue-800 text-left">Trung gian ngôn ngữ</p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-blue-800">Giao thương quốc tế</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-blue-800">Trung gian ngôn ngữ</p>
-              </div>
+            </div>
+            
+            {/* Phần phải - Mô tả thêm */}
+            <div className="flex flex-col justify-center">
+              <h3 className="text-2xl font-bold text-blue-900 mb-4">Thời kỳ tiếp xúc văn minh Tây phương</h3>
+              <p className="text-lg text-blue-700 leading-relaxed mb-4">
+                Giai đoạn thuộc địa đánh dấu sự tiếp xúc với công nghiệp phương Tây và sự phát triển của thương nghiệp.
+              </p>
+              <p className="text-lg text-blue-700 leading-relaxed">
+                Nghề danh giá là buôn bán và thông ngôn, phản ánh tầm quan trọng của giao thương và trung gian ngôn ngữ.
+              </p>
             </div>
           </div>
         </div>

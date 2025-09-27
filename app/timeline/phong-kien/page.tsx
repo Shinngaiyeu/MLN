@@ -137,22 +137,36 @@ export default function PhongKienPage() {
 
       {/* Đặc điểm chính */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-200">
-            <h2 className="text-3xl font-bold text-amber-900 mb-6">Đặc điểm chính:</h2>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-amber-800">Nông nghiệp thủ công</p>
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Phần trái - Đặc điểm chính */}
+            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 border border-amber-200">
+              <h2 className="text-3xl font-bold text-amber-900 mb-6 text-left">Đặc điểm chính:</h2>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-amber-800 text-left">Nông nghiệp thủ công</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-amber-800 text-left">Tư tưởng Nho giáo</p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-amber-800 text-left">Hệ thống quan lại</p>
+                </div>
               </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-amber-800">Tư tưởng Nho giáo</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-amber-600 rounded-full mt-2 flex-shrink-0"></div>
-                <p className="text-lg text-amber-800">Hệ thống quan lại</p>
-              </div>
+            </div>
+            
+            {/* Phần phải - Mô tả thêm */}
+            <div className="flex flex-col justify-center">
+              <h3 className="text-2xl font-bold text-amber-900 mb-4">Xã hội nông nghiệp phong kiến</h3>
+              <p className="text-lg text-amber-700 leading-relaxed mb-4">
+                Giai đoạn phong kiến Việt Nam được đặc trưng bởi nền nông nghiệp thủ công phát triển với quan hệ địa chủ - nông dân.
+              </p>
+              <p className="text-lg text-amber-700 leading-relaxed">
+                Nghề danh giá nhất là quan lại và nho sĩ, phản ánh tầm quan trọng của tri thức Nho giáo trong xã hội.
+              </p>
             </div>
           </div>
         </div>
