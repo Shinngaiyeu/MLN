@@ -172,7 +172,14 @@ export default function BaiHocPage() {
                 </DialogTrigger>
 
                 {/* Modal */}
-                <DialogContent className="max-w-6xl w-full h-[80vh] p-0 overflow-hidden bg-black z-[9999] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <DialogContent 
+                  className="p-0 overflow-hidden bg-black z-[9999]" 
+                  style={{ 
+                    maxWidth: '90vw', 
+                    width: '90vw', 
+                    height: '85vh',
+                  }}
+                >
                   <div className="relative w-full h-full bg-black rounded-lg shadow-2xl overflow-hidden">
                     <div className="w-full h-full bg-black">
                       <iframe
